@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Activity</title>
   <link rel="stylesheet" href="css/activity.css">
+  <script src="js/jquery.js"></script>
+  <script src="js/ajax.js"></script>
 </head>
 <body>
   <header>
@@ -21,14 +23,16 @@
     </div>
     
     <div class="bottom-line">
-      <div class="bottom bottom-left-element">
+      <div class="bottom bottom-left-element" id="headernav">
         <div class="bottom-left-element bot-lft-el-1">
-          <img src="Header/Tabs/Small/Subtract.png" alt="" class="bottom-left-element bot-lft-el-1">
-          <span class="bottom-left-element">Activity</span>
+          <a href="/Activity.html" class="bottom-left-element"><img src="Header/Tabs/Small/Subtract.png" alt="" class="bottom-left-element bot-lft-el-1">
+          <span class="bottom-left-element">Activity</span></a>
         </div>
         <div class="bottom-left-element">
-          <img src="Header/Tabs/Small/Vector.png" alt="" class="bottom-left-element">
-          <span class="bottom-left-element">Map</span>
+          <a href="/Map.html">
+            <img src="Header/Tabs/Small/Vector.png" alt="" class="bottom-left-element">
+            <span class="bottom-left-element">Map</span>
+          </a>
         </div>
         <div class="bottom-left-element">
           <img src="Header/Tabs/Small/Union.png" alt="" class="bottom-left-element">
@@ -56,7 +60,7 @@
     </div>
 </header>
 <main>
-  <div class="post-profile">
+  <div class="post-profile" id="content">
     <div class="post">
       <div class="info-post">
         <div class="info-post-top">

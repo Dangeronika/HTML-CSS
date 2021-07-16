@@ -278,3 +278,29 @@ textarea{
   resize: none;
   padding: 12px 24px;
 }
+.main-info{
+  background-color: white;
+  flex-grow: 1;
+  width: 1248px;
+  height: 476px;
+  border: 1px solid #dde0e6
+}
+.top-map{
+  font-size: 14px;
+  line-height: 20px;
+  padding: 15px 16px 0 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+}
+.top-map-button{
+  outline: none;
+  border: 0;
+  background: transparent;
+}
+.map{
+  padding: 16px;
+}
+.google-map{
+  width: 100%;
+}
