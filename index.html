@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="css/activity.css">
   <script src="js/jquery.js"></script>
   <script src="js/ajax.js"></script>
+  <script src="js/googlemap.js"></script>
 </head>
 <body>
   <header>
@@ -24,19 +25,21 @@
     
     <div class="bottom-line">
       <div class="bottom bottom-left-element" id="headernav">
-        <div class="bottom-left-element bot-lft-el-1">
-          <a href="/Activity.html" class="bottom-left-element"><img src="Header/Tabs/Small/Subtract.png" alt="" class="bottom-left-element bot-lft-el-1">
-          <span class="bottom-left-element">Activity</span></a>
+        <div class="bottom-left-element animationdiv">
+          <a id="href" href="/index.html" ><img src="Header/Tabs/Small/Subtract.png" alt="" class="bot-lft-el">
+          <span class="bot-lft-el">Activity</span></a>
         </div>
-        <div class="bottom-left-element">
-          <a href="/Map.html">
-            <img src="Header/Tabs/Small/Vector.png" alt="" class="bottom-left-element">
-            <span class="bottom-left-element">Map</span>
+        <div class="bottom-left-element animationdiv">
+          <a id="href" href="/Map.html">
+            <img src="Header/Tabs/Small/Vector.png" alt="" class="bot-lft-el">
+            <span class="bot-lft-el">Map</span>
           </a>
         </div>
-        <div class="bottom-left-element">
-          <img src="Header/Tabs/Small/Union.png" alt="" class="bottom-left-element">
-          <span class="bottom-left-element">Time</span>
+        <div class="bottom-left-element animationdiv">
+          <a id="href" href="/Timer.html">
+            <img src="Header/Tabs/Small/Union.png" alt="" class="bot-lft-el">
+            <span class="bot-lft-el">Time</span>
+          </a>
         </div>
       </div>
       <div class="bottom bottom-right-element">
@@ -59,8 +62,8 @@
       </div>
     </div>
 </header>
-<main>
-  <div class="post-profile" id="content">
+<main id="content">
+  <div class="post-profile" >
     <div class="post">
       <div class="info-post">
         <div class="info-post-top">
@@ -176,6 +179,10 @@
       </div>
     </div>
   </div>
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBIz_H0FeIMxYXHfz5QIaj0yydUIClxnA8&callback=initMap&libraries=&v=weekly" async>
+  </script>
+</div>
 </main>
 </body>
 </html>

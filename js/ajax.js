@@ -1,22 +1,14 @@
 $(document).ready(function() {
  
-    // Check for hash value in URL
-    // var hash = window.location.hash.substr(1);
-    // var href = $('#headernav div a').each(function(){
-    //     var href = $(this).attr('href');
-    //     if(hash==href.substr(0,href.length-5)){
-    //         var toLoad = hash+'.html #content';
-    //         $('#content').load(toLoad)
-    //     } 
-    // });
-    
+
     $('#headernav div a').click(function(){
     
-    var toLoad = $(this).attr('href')+' #content';
+    let toLoad = $(this).attr('href')+' #content';
     $('#content').hide('fast',loadContent);
     window.location.hash = $(this).attr('href').substr(0,$(this).attr('href').length-5);
     function loadContent() {
      $('#content').load(toLoad,'',showNewContent())
+
     }
     function showNewContent() {
      $('#content').show('normal',hideLoader());
@@ -24,7 +16,18 @@ $(document).ready(function() {
     function hideLoader() {
      $('#load').fadeOut('normal');
     }
+    
     return false;
     
     });
 });
+
+$( document ).ajaxComplete(function() {
+    let opt = {
+  center: {lat:56.75343134973149, lng: 37.16523199089132 },
+  zoom: 4 
+  }
+    
+  let map = new google.maps.Map(document.getElementById("map"), opt);
+       
+  });

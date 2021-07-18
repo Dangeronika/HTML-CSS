@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Map</title>
-  <link rel="stylesheet" href="css/map.css">
+  <link rel="stylesheet" href="css/activity.css">
   <script src="js/jquery.js"></script>
   <script src="js/ajax.js"></script>
 </head>
@@ -23,18 +23,22 @@
     </div>
     
     <div class="bottom-line">
-      <div class="bottom bottom-left-element">
-        <div class="bottom-left-element bot-lft-el-1">
-          <img src="Header/Tabs/Small/Subtract.png" alt="" class="bottom-left-element bot-lft-el-1">
-          <span class="bottom-left-element">Activity</span>
+      <div class="bottom bottom-left-element" id="headernav">
+        <div class="bottom-left-element animationdiv">
+          <a id="href" href="/index.html" ><img src="Header/Tabs/Small/Subtract.png" alt="" class="bot-lft-el">
+          <span class="bot-lft-el">Activity</span></a>
         </div>
-        <div class="bottom-left-element">
-          <img src="Header/Tabs/Small/Vector.png" alt="" class="bottom-left-element">
-          <span class="bottom-left-element">Map</span>
+        <div class="bottom-left-element animationdiv">
+          <a id="href" href="/Map.html">
+            <img src="Header/Tabs/Small/Vector.png" alt="" class="bot-lft-el">
+            <span class="bot-lft-el">Map</span>
+          </a>
         </div>
-        <div class="bottom-left-element">
-          <img src="Header/Tabs/Small/Union.png" alt="" class="bottom-left-element">
-          <span class="bottom-left-element">Time</span>
+        <div class="bottom-left-element animationdiv">
+          <a id="href" href="/Timer.html">
+            <img src="Header/Tabs/Small/Union.png" alt="" class="bot-lft-el">
+            <span class="bot-lft-el">Time</span>
+          </a>
         </div>
       </div>
       <div class="bottom bottom-right-element">
@@ -57,14 +61,16 @@
       </div>
     </div>
   </header>
-  <main>
-    <div class="main-info" id="content">
+  <main id="content">
+    <div class="main-info">
       <div class="top-map">
         <span>Basic map</span>
         <button class="top-map-button"><img src="Badge/Small/Vector.png" alt=""></button>
       </div>
-      <div class="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1839.3525675935641!2d37.164494269365484!3d56.75376416747959!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b4424517be5c3f%3A0xb4eb479fd1f06093!2z0J7RgdC-0LHQsNGPINGN0LrQvtC90L7QvNC40YfQtdGB0LrQsNGPINC30L7QvdCwINCU0YPQsdC90LA!5e0!3m2!1sru!2sru!4v1626197827779!5m2!1sru!2sru" width="1216" height="404" style="border:0;" allowfullscreen="" loading="lazy" class="google-map"></iframe>
+      <div class="blockmap">
+        <div class="map" id="map">
+          <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1839.3525675935641!2d37.164494269365484!3d56.75376416747959!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b4424517be5c3f%3A0xb4eb479fd1f06093!2z0J7RgdC-0LHQsNGPINGN0LrQvtC90L7QvNC40YfQtdGB0LrQsNGPINC30L7QvdCwINCU0YPQsdC90LA!5e0!3m2!1sru!2sru!4v1626197827779!5m2!1sru!2sru" width="1216" height="404" style="border:0;" allowfullscreen="" loading="lazy" class="google-map"></iframe> -->
+        </div>
       </div>
     </div>
   </main>
