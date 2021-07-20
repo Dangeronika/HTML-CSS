@@ -17,18 +17,6 @@ function createRequestObject()
 
 function pageChange (link) {
   
-  // let toLoad = $(this).attr('href')+' #content';
-  // $('#content').hide('fast',loadContent);
-  // window.location.hash = link.replace('.html', '');
-  // function loadContent() {
-  // $('#content').load(link,'',showNewContent())
-  // }
-  // function showNewContent() {
-  //   $('#content').show('normal',hideLoader());
-  //  }
-  // function hideLoader() {
-  //   $('#load').fadeOut('normal');
-  // }
   let toLoad = link + ' #content';
     $('#content').hide('fast',loadContent);
     window.location.hash = link.replace('.html', '');
