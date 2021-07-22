@@ -22,7 +22,7 @@ function loadContent( road ) {
 }
 function showNewContent() {
   $('#content').show('normal');
-  if(document.location.pathname.indexOf('Map.html') == 1) {
+  if(document.location.pathname.indexOf('Map.html')) {
     initMap();
   }
 }
