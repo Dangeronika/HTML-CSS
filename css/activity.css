@@ -96,6 +96,9 @@ a{
 .animationdiv:hover{
   border-bottom: 3px solid #2375E1;
 }
+.Flame{
+  color: #2375E1;
+}
 /* Конец header-bottom части */
 /* Конец header */
 .post-profile{
