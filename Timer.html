@@ -5,7 +5,15 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Timer</title>
-  <link rel="stylesheet" href="css/timer.css">
+  <link rel="stylesheet" href="css/activity.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js">
+  </script>
+  <script src="js/googlemap.js"></script>
+  <script src="js/timer.js"></script>
+  <script src="js/history.js"></script>
+  <script>
+    timer();
+  </script>
 </head>
 <body>
   <header>
@@ -21,18 +29,22 @@
     </div>
     
     <div class="bottom-line">
-      <div class="bottom bottom-left-element">
-        <div class="bottom-left-element bot-lft-el-1">
-          <img src="Header/Tabs/Small/Subtract.png" alt="" class="bottom-left-element bot-lft-el-1">
-          <span class="bottom-left-element">Activity</span>
+      <div class="bottom bottom-left-element" id="headernav">
+        <div class="bottom-left-element animationdiv">
+          <a id="href" href="index.html" class="index_href"><img src="Header/Tabs/Small/Subtract.png" alt="" class="bot-lft-el">
+          <span class="bot-lft-el">Activity</span></a>
         </div>
-        <div class="bottom-left-element">
-          <img src="Header/Tabs/Small/Vector.png" alt="" class="bottom-left-element">
-          <span class="bottom-left-element">Map</span>
+        <div class="bottom-left-element animationdiv">
+          <a id="href" href="Map.html" class="Map_href">
+            <img src="Header/Tabs/Small/Vector.png" alt="" class="bot-lft-el">
+            <span class="bot-lft-el">Map</span>
+          </a>
         </div>
-        <div class="bottom-left-element">
-          <img src="Header/Tabs/Small/Union.png" alt="" class="bottom-left-element">
-          <span class="bottom-left-element">Time</span>
+        <div class="bottom-left-element animationdiv">
+          <a id="href" href="Timer.html" class="Timer_href">
+            <img src="Header/Tabs/Small/Union.png" alt="" class="bot-lft-el">
+            <span class="bot-lft-el">Time</span>
+          </a>
         </div>
       </div>
       <div class="bottom bottom-right-element">
@@ -55,16 +67,19 @@
       </div>
     </div>
   </header>
-  <main>
+  <main id="content">
     <div class="main-info">
       <div class="top-timer">
         <span>Timer</span>
         <button class="top-map-button"><img src="Badge/Small/Vector.png" alt=""></button>
       </div>
       <div class="middle-timer">
-        <span>00:00:05</span>
+        <span id="tiker"></span>
       </div>
     </div>
   </main>
+  <script
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBIz_H0FeIMxYXHfz5QIaj0yydUIClxnA8&callback=initMap&libraries=&v=weekly" async>
+  </script>
 </body>
 </html>
